@@ -18,6 +18,7 @@ Prerequisiti minimi dell'applicativo:
 3) Struttura Client/Server
 4) Server Apache
 5) Testato su Php v. 7.5.4
+6) Creare due cartelle: assets e works. Nella cartella assets va inserito il file "small_worked.mp4"
 
 
 
