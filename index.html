@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>MemeGen V1.0 By Alberto Facchi</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+
+
+
+       
+    </head>
+
+    <style>
+       
+    </style>
+    <body>
+
+
+        <div id="menu_principale">
+            <ul>
+                <li class="voice_menu" onclick="Home()">
+                    <div>
+                        Home
+                    </div>
+                </li>
+                <li class="voice_menu">
+                    <div>
+                        Service
+                    </div>
+                    <ul class="sotto_menu">
+                        <li class="voice_menu">
+                            <div>
+                                Video Edit
+                            </div>
+                            <ul class="sub_second_menu">
+                                <li class="voice_menu">
+                                    <div>
+                                        Multi-meme C.S.!
+                                    </div>
+                                </li>
+                                <li class="voice_menu">
+                                    <div>
+                                        Create Meme 
+                                    </div>
+                                    <ul class="sub_second_menu">
+                                        <li class="voice_menu">
+                                            <div>
+                                                Coffin Dancer C.S.!
+                                            </div>
+                                        </li>
+                                        <li class="voice_menu">
+                                            <div>
+                                                Direct by:
+                                            </div>
+                                            <ul class="sub_second_menu">
+                                                <li class="voice_menu">
+                                                    <div  onclick="myform()">
+                                                        Robert B. Weide
+                                                    </div>
+                                                </li>
+                                                <li class="voice_menu">
+                                                    <div>
+                                                        MimmoModem C.S!
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="voice_menu">
+                            <div>
+                                Image Edit
+                            </div>
+                            <ul class="sub_second_menu">
+                                <li class="voice_menu">
+                                    <div>
+                                        Coming Soon
+                                    </div>
+                                </li>
+                                <li class="voice_menu">
+                                    <div>
+                                        Coming Soon
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="voice_menu" onclick="aboutus()">
+                    <div>
+                        (Something) About Us:
+                    </div>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    
+       
+       
+
+        <div class="container2" id="container2">
+
+                Il sito sfrutta la libreria FFMPEG per unire due video insieme.
+                In input abbiamo il file con estensione MP4 da caricare tramite il form nel server.
+                Il video viene rigenerato con lo stesso timestamp del video in coda e successivamente 
+                viene unito al file depositato sul server. La concatenazione avviene tramite un file di testo
+                che contiene i video da unire nell'ordine desiderato.
+                Il file di testo viene generato ogni volta che viene inviato un nuovo file sul server.
+                Al termine delle operazioni ffmpeg, viene lanciato un redirect verso il modulo di download.
+                I File rimangono in memoria e non vengono cancellati al termine del download, verrano
+                cancellati da una routine(non implementata) ogni ora.
+                Funzione totalmente async 
+
+            
+        </div>
+        <br>
+
+
+
+        <main>
+            <div id="weide" class="weide">
+            <h1>Direct by:Robert B. Weide</h1>
+            <br>
+            <p>
+                <input type="file" id="file-input" required accept=".mp4">
+                <label for="file-input">Select a file</label>
+                <p id="message"></p>
+                <br>
+                <input type="button" id="button" onclick="loadDoc()" value="Crea Meme" >
+ 
+            </p>
+            <div id=save-file></div>
+            <p>
+                <progress id="upload-progress"></progress>
+            </p>
+        </div>
+        </main>
+        <script src="file-upload-progress-bar.js"></script>
+
+
+        
+    </body>
+</html>
