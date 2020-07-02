@@ -47,16 +47,14 @@ La chiamata exec contenente concat unisce il file generato da -video_track_times
 
 DOWNLOAD.PHP
 
-Lo script legge la cartella /works e restituisce il nome del file generato da catch-file.php. L'utente ha la possibilità di scaricare il
-file o cancellarlo senza scaricarlo.
+Lo script legge la cartella /works e restituisce il nome del file generato da catch-file.php. L'utente ha la possibilità di scaricare il file o cancellarlo senza scaricarlo.
 
 DELETE.PHP
  
 Script che cancella il file dalla cartella /works. Viene richiamato dall'utente.
 
 
-Sviluppi: Le future espansioni dell'applicativo sono  l'ampliamento del catalogo di Meme realizzabili e l'implementazione delle funzioni
-per  l'image editing.
+Sviluppi: Le future espansioni dell'applicativo sono  l'ampliamento del catalogo di Meme realizzabili e l'implementazione delle funzioni per  l'image editing.
 
 
 
